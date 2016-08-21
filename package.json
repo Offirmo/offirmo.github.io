@@ -1,0 +1,30 @@
+{
+  "name": "offirmo.github.io",
+  "version": "0.0.1",
+  "description": "Offirmo's showcase website",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "build": "",
+    "test": "echo 'no tests !'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Offirmo/offirmo.github.io.git"
+  },
+  "keywords": [
+    "showcase",
+    "website"
+  ],
+  "author": "Offirmo <offirmo.net@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Offirmo/offirmo.github.io/issues"
+  },
+  "homepage": "https://github.com/Offirmo/offirmo.github.io#readme",
+  "dependencies": {
+    "tachyons": "^4.1.0"
+  },
+  "devDependencies": {
+  }
+}

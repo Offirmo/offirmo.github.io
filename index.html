@@ -1,1 +1,154 @@
-Hello World
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Offirmo - fullstack Developper</title>
+
+	<link rel="stylesheet" href="./tachyons.4.1.0.min.css">
+	<xxlink rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
+	<style type="text/css">
+		@font-face{
+			font-family: 'Fira Code';
+			src: url('./FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot');
+			src: url('./FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot') format('embedded-opentype'),
+			url('./FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff2/FiraCode-Light.woff2') format('woff2'),
+			url('./FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff/FiraCode-Light.woff') format('woff'),
+			url('./FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/ttf/FiraCode-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-style: normal;
+		}
+		body {
+			font: 14px/1.5em "Fira Code";
+			font-weight: 300;
+			font-feature-settings: "calt" 1;  /* Enable ligatures for IE 10+, Edge */
+			text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+		}
+	</style>
+</head>
+
+<body class="mid-gray bg-near-white">
+
+	<article class="cf">
+
+		<!-- http://tachyons.io/components/layout/two-column-collapse-one/index.html -->
+		<div class="fl w-100 w-50-ns tc">
+
+			<!-- http://tachyons.io/components/collections/profile-card-title-subtitle/index.html -->
+			<div class="mw7 center mt3">
+				<div class="tc">
+					<img src="./avatar_333x333.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Offirmo's avatar">
+					<h1 class="f3 mb2">Offirmo</h1>
+					<h2 class="f5 fw4 mt0">Fullstack Developper</h2>
+					<h2 class="f5 fw4 mt0 v-mid">
+						<svg class="w1 h2 gray v-mid" data-icon="position-icon" viewBox="100 -50 312 712" style="fill:currentcolor">
+							<title>GPS marker icon</title>
+							<path d="M256 0c-88.366 0-160 71.634-160 160 0 160 160 352 160 352s160-192 160-352c0-88.366-71.635-160-160-160zM256 256c-53.020 0-96-42.98-96-96s42.98-96 96-96 96 42.98 96 96-42.98 96-96 96z"></path>
+						</svg>
+						<span>Paris + Nomad</span>
+					</h2>
+				</div>
+			</div>
+
+			<p class="tc">
+				<!-- https://github.com/markhuge/svg-social-icons -->
+				<a class="link dim gray dib h2 w2 pa2"
+					href="https://github.com/Offirmo" title="Offirmo's GitHub profile">
+					<svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
+						<title>github icon</title>
+						<path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
+					</svg>
+				</a>
+				<a class="link dim gray dib h2 w2 pa2"
+					href="http://stackoverflow.com/users/587407/offirmo?tab=profile" title="Offirmo's Stack Overflow profile">
+					<svg data-icon="Stack Overflow" viewBox="-25 -25 600 600" style="fill:currentcolor">
+						<title>Stack Overflow icon</title>
+						<path d="M512 320v192h-512v-192h64v128h384v-128zM96 352h320v64h-320zM103.576 282.733l13.849-62.482 312.416 69.248-13.849 62.482zM139.829 154.279l27.046-58.003 290.016 135.232-27.046 58.003zM495.861 180.738l-38.961 50.775-253.873-194.804 28.168-36.709h29.122z"></path>
+					</svg>
+				</a>
+				<a class="link dim gray dib h2 w2 pa2"
+					href="https://fr.linkedin.com/in/yves-emmanuel-jutard-6775521" title="Offirmo's LinkedIn profile">
+					<svg data-icon="linkedin" viewBox="16 16 32 32" style="fill:currentcolor">
+						<title>linkedin icon</title>
+						<path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"></path>
+					</svg>
+				</a>
+				<a class="link dim gray dib h2 w2 pa2"
+					href="https://medium.com/@Offirmo" title="Offirmo's Medium stories">
+					<svg data-icon="medium" viewBox="14 14 34 34" style="fill:currentcolor">
+						<title>medium blog platform icon</title>
+						<path d="M47,23.7h-1.2c-0.4,0-0.9,0.6-0.9,1v14.7c0,0.4,0.5,1,0.9,1H47v3.4H36.4v-3.4h2.1V24.9h-0.1 l-5.3,18.9h-4.1l-5.2-18.9h-0.1v15.5H26v3.4h-9v-3.4h1.2c0.5,0,1-0.6,1-1V24.7c0-0.4-0.5-1-1-1H17v-3.6h11.3l3.7,13.8h0.1l3.7-13.8 H47V23.7z"></path>
+					</svg>
+				</a>
+				<a class="link dim gray dib h2 w2 pa2"
+					href="mailto:offirmo(dot)net(at)gmail.com" title="Offirmo's email">
+					<svg data-icon="email" viewBox="16 16 32 32" style="fill:currentcolor">
+						<title>email icon</title>
+						<path d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z"></path>
+					</svg>
+				</a>
+			</p>
+
+		</div>
+
+		<div class="fl w-100 w-50-ns tc">
+
+			<ul class="list ph3 ph5-ns pv2 pt4-ns">
+				<li class="dib w3 h3 bg-yellow pa1 relative"><span class="absolute bottom-0 pa1 right-0 b f3 black">JS</span></li>
+				<li class="dib w3 h3 bg-blue pa1 relative"><span class="absolute bottom-0 pa1 right-0 b f3 white">TS</span></li>
+				<li class="dib w3 h3 bg-dark-gray pa1 relative"><span class="absolute bottom-0 pa1 right-0 b f4 tracked-tight white">Bash</span></li>
+				<li class="dib w3 h3 bg-light-blue pa1 relative"><span class="absolute bottom-0 pa1 right-0 b f4 tracked-tight navy">C++</span></li>
+			</ul>
+
+			<ul id="skills-list" class="list ph3 ph5-ns pv2">
+				javascript, node.js, express.js, AngularJS, React,
+				npm, jspm, require.js, appcache,
+				mocha+chai, eslint, Babel,
+				typescript, typings, tslint,
+				Bootstrap, dust.js, FormatJS,
+				Redux, Rx.js,
+				Git, GitHub+enterprise,
+				Jenkins, Travis CI, sass, Selenium, Protractor,
+				Docker, Vagrant, puppet, heroku, Amazon AWS,
+				Bash, Python, Ruby, Perl,
+				Linux, Ubuntu, BSD, kernel & network programming, drivers,
+				PostgreSQL, MongoDB,
+				assembly, Boost, gcc, cmake, clang, valgrind
+			</ul>
+		</div>
+	</article>
+
+
+	<ul class="list pl0 bt b--black-10">
+
+		<li class="pa3 pa4-ns bb b--black-10">
+			<b class="db f3 mb1">
+			More about me
+			</b>
+			<span class="f5 db lh-copy measure">
+			Coming soon...
+			</span>
+		</li>
+	</ul>
+
+
+
+	<footer class="pv2 ph3 ph5-m ph6-l mid-gray">
+		<small class="f6 db tc">©2016 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
+		<div class="tc mt1">
+			<a href="#"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+			<a href="#"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Credits</a>
+		</div>
+	</footer>
+
+	<script>
+		const skill_list_element = document.querySelector('#skills-list')
+		const skills = skill_list_element.textContent.split(',').map(s => s.trim())
+		document.querySelector('#skills-list').textContent = ''
+		skills
+			.map(s => { let e =document.createElement('li'); e.className="dib ph2 tracked-tight"; e.textContent = s; return e})
+			.forEach(e => skill_list_element.appendChild(e))
+
+		//<li class="dib ph2">Abyssinian</li>
+	</script>
+</body>
