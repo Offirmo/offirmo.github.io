@@ -20,6 +20,8 @@ animations
 
 ~~~~~~~~~~
 
+VanillaJS -> React+Redux
+How do you like this site ?
 pas designer !
 
 ~~~~~~~~~~
