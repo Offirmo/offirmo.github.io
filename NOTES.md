@@ -12,6 +12,10 @@ Photes avec équipe (light gallery)
 
 ~~~~~~~~~~~~~~~~~~
 
+open source
+
+~~~~~~~~~~~~~~~~~~
+
 console = server + typekit
 https
 
