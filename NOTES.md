@@ -32,3 +32,13 @@ pas designer !
 C++ rouillé
 
 
+~~~~~
+
+Unit tests
+
+~~~~~
+
+functionnal programming, inversion of control, factory
+https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4
+
+
