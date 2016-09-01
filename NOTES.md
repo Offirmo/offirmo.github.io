@@ -3,6 +3,7 @@ Ideas
 Site épuré mais en fait riche
 
 https://github.com/sachinchoolur/lightgallery.js
+https://randomcolor.llllll.li/
 
 ~~~~~~~~~~~~~~~~~~
 
