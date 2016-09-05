@@ -4,6 +4,16 @@ Site épuré mais en fait riche
 
 https://github.com/sachinchoolur/lightgallery.js
 https://randomcolor.llllll.li/
+hsl(28, 100%, 96%)
+hsl(103, 75.29%, 96%)
+hsl(147, 92.31%, 96%)
+hsl(10, 100%, 96%)
+hsl(345, 88.15%, 96%)
+hsl(232, 85.47%, 96%)
+hsl(176, 89.82%, 96%)
+hsl(137, 77.21%, 96%)
+hsl(214, 86.31%, 96%)
+hsl(77, 100%, 96%)
 
 ~~~~~~~~~~~~~~~~~~
 
