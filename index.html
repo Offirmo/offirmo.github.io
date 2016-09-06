@@ -31,11 +31,15 @@
 			background: inherit;
 			width: 100vw;
 			transform: skewY(-1.7deg);
+			height: 50px;
+			z-index: 1;
 		}
 		.angled-sep-trailing {
 			background: inherit;
 			width: 100vw;
 			transform: skewY(1.7deg);
+			height: 50px;
+			z-index: 1;
 		}
 
 		@media screen and (min-width: 30em) {
@@ -60,8 +64,8 @@
 		@media screen and (min-width: 60em) {
 			.test-breakpoint-l::before { content: 'l' }
 			.h-100v-l { height: 100vh; }
-			.angled-sep-leading { transform: skewY(-1.2deg); }
-			.angled-sep-trailing { transform: skewY(1.2deg); }
+			.angled-sep-leading { transform: skewY(-1.0deg); }
+			.angled-sep-trailing { transform: skewY(1.0deg); }
 		}
 
 	</style>
@@ -168,21 +172,22 @@
 		</div>
 	</article>
 
-	<ul class="list pl0 bt bb b--black-10">
+	<ul class="list pl0 bt b--black-10">
 
-		<li class="pa3 pa4-ns pv3">
+		<li class="pa3 pa4-ns pv3 tc">
 			<b class="db f3 mb1">
-				More about me:
+				More about me…
 			</b>
 			<br />
 		</li>
 
 		<li class="pa3 pa4-ns pv4 relative bg-light-red">
 			<span class="angled-sep-leading h2 absolute top--1 left-0"></span>
-			<b class="db f3 mb1">
+
+			<b class="db f4-ns f3-l mb1">
 				Frontend
 			</b>
-			<span class="f5 db lh-copy measure">
+			<span class="f6-ns f5-l db lh-copy measure">
 				⨯ I am not a designer
 			</span>
 			<br />
@@ -191,10 +196,10 @@
 		<li class="pa3 pa4-ns pt3 relative bg-gray" style="color: #30bb30;">
 			<span class="angled-sep-trailing h2 absolute top--1 left-0"></span>
 
-			<b class="db f3 mb1">
+			<b class="db f4-ns f3-l mb1">
 				Backend
 			</b>
-			<span class="f5 db lh-copy measure">
+			<span class="f6-ns f5-l db lh-copy measure">
 				> echo "I 💙 Ubuntu"<br/>
 				> echo "I speak bash + docker"
 			</span>
@@ -203,10 +208,11 @@
 
 		<li class="pa3 pa4-ns pv4 relative bg-yellow">
 			<span class="angled-sep-leading h2 absolute top--1 left-0"></span>
-			<b class="db f3 mb1">
-				I can teach
+
+			<b class="db f4-ns f3-l mb1">
+				In a team
 			</b>
-			<span class="f5 db lh-copy measure">
+			<span class="f6-ns f5-l db lh-copy measure">
 				My fellow teammates often praise my ability to explain difficult concepts.
 			</span>
 			<br />
@@ -214,10 +220,11 @@
 
 		<li class="pa3 pa4-ns pv3 pv2-ns relative bg-near-white">
 			<span class="angled-sep-trailing h2 absolute top--1 left-0"></span>
-			<b class="db f3 mb1">
+
+			<b class="db f4-ns f3-l mb1">
 				Still curious ?
 			</b>
-			<span class="f5 db lh-copy measure">
+			<span class="f6-ns f5-l db lh-copy measure">
 				<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything⇢</a>
 			</span>
 		</li>
