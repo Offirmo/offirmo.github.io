@@ -3,6 +3,9 @@ Ideas
 Site épuré mais en fait riche
 
 https://github.com/sachinchoolur/lightgallery.js
+https://github.com/camwiegert/in-view
+console
+
 https://randomcolor.llllll.li/
 hsl(28, 100%, 96%)
 hsl(103, 75.29%, 96%)
@@ -29,6 +32,16 @@ open source
 
 console = server + typekit
 https
+
+## Frontend
+⨯ I am not a designer
+
+## Backend
+> echo "I 💙 Ubuntu"<br/>
+> echo "I speak bash + docker"
+
+## In a team
+My fellow teammates often praise my ability to explain difficult concepts.
 
 ~~~~~~~~~~~~~~~~~
 

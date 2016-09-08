@@ -23,24 +23,27 @@
 			font-weight: 300;
 			font-feature-settings: "calt" 1;  /* Enable ligatures for IE 10+, Edge */
 			text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+
+			width: 100vw;
+			overflow-x: hidden;
+		}
+
+		#more-about-me > li > b {
+			z-index: 100;
 		}
 
 		/* tachyons extensions */
 		.h-100v { height: 100vh; }
-		.angled-sep-leading {
+		.angled-sep {
 			background: inherit;
 			width: 100vw;
-			transform: skewY(-1.7deg);
 			height: 50px;
 			z-index: 1;
+			/*overflow: visible;
+			overflow-x: hidden;*/
 		}
-		.angled-sep-trailing {
-			background: inherit;
-			width: 100vw;
-			transform: skewY(1.7deg);
-			height: 50px;
-			z-index: 1;
-		}
+		.angled-sep-leading { transform: skewY(-1.7deg); }
+		.angled-sep-trailing { transform: skewY(1.7deg); }
 
 		@media screen and (min-width: 30em) {
 			.test-breakpoint-ns::before { content: 'ns' }
@@ -73,7 +76,7 @@
 
 <body class="mid-gray bg-near-white">
 
-	<article class="h-100v-ns">
+	<article id="splash" class="h-100v-ns">
 		<span class="dn test-breakpoint-ns"></span>
 		<span class="dn test-breakpoint-m"></span>
 		<span class="dn test-breakpoint-l"></span>
@@ -167,16 +170,16 @@
 		</div>
 
 		<div class="w-100 tc dn db-l absolute bottom-0">
-			<span class="f6 b">More about me</span><br />
+			<span class="f6 b">Let's team up ?</span><br />
 			<span class="f2 lh-solid">↯</span>
 		</div>
 	</article>
 
-	<ul class="list pl0 bt b--black-10">
+	<ul id="more-about-me" class="list pl0 bt b--black-10">
 
 		<li class="pa3 pa4-ns pv3 tc">
 			<b class="db f3 mb1">
-				More about me…
+				Let's team up !
 			</b>
 			<br />
 		</li>
@@ -185,19 +188,19 @@
 			<span class="angled-sep-leading h2 absolute top--1 left-0"></span>
 
 			<b class="db f4-ns f3-l mb1">
-				Frontend
+				TODO Frontend
 			</b>
 			<span class="f6-ns f5-l db lh-copy measure">
-				⨯ I am not a designer
+				lorem ipsum dolor…
 			</span>
 			<br />
 		</li>
 
 		<li class="pa3 pa4-ns pt3 relative bg-gray" style="color: #30bb30;">
-			<span class="angled-sep-trailing h2 absolute top--1 left-0"></span>
+			<span class="angled-sep angled-sep-trailing h2 absolute top--1 left-0"></span>
 
 			<b class="db f4-ns f3-l mb1">
-				Backend
+				TODO Backend
 			</b>
 			<span class="f6-ns f5-l db lh-copy measure">
 				> echo "I 💙 Ubuntu"<br/>
@@ -207,29 +210,28 @@
 		</li>
 
 		<li class="pa3 pa4-ns pv4 relative bg-yellow">
-			<span class="angled-sep-leading h2 absolute top--1 left-0"></span>
+			<span class="angled-sep angled-sep-leading h2 absolute top--1 left-0"></span>
 
 			<b class="db f4-ns f3-l mb1">
-				In a team
+				TODO Team
 			</b>
 			<span class="f6-ns f5-l db lh-copy measure">
-				My fellow teammates often praise my ability to explain difficult concepts.
+				TODO
 			</span>
 			<br />
 		</li>
 
 		<li class="pa3 pa4-ns pv3 pv2-ns relative bg-near-white">
-			<span class="angled-sep-trailing h2 absolute top--1 left-0"></span>
+			<span class="angled-sep angled-sep-trailing h2 absolute top--1 left-0"></span>
 
-			<b class="db f4-ns f3-l mb1">
+			<b class="db f4-ns f3-l mb1 tc">
 				Still curious ?
 			</b>
-			<span class="f6-ns f5-l db lh-copy measure">
+			<span class="f6-ns f5-l db lh-copy tc">
 				<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything⇢</a>
 			</span>
 		</li>
 	</ul>
-
 
 	<footer class="pv2 ph3 ph5-m ph6-l mid-gray">
 		<small class="f6 db tc">©2016 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
