@@ -28,8 +28,18 @@
 			overflow-x: hidden;
 		}
 
-		#more-about-me > li > b {
-			z-index: 100;
+		.light-color-01 { background: hsl(28, 100%, 96%) }
+		.light-color-02 { background: hsl(103, 75.29%, 96%) }
+		.light-color-03 { background: hsl(10, 100%, 96%) }
+		.light-color-04 { background: hsl(147, 92.31%, 96%) }
+		.light-color-05 { background: hsl(345, 88.15%, 96%) }
+		.light-color-06 { background: hsl(176, 89.82%, 96%) }
+		.light-color-07 { background: hsl(232, 85.47%, 96%) }
+		.light-color-08 { background: hsl(137, 77.21%, 96%) }
+		.light-color-09 { background: hsl(214, 86.31%, 96%) }
+		.light-color-10 { background: hsl(77, 100%, 96%) }
+
+		.more-about-me > li {
 		}
 
 		/* tachyons extensions */
@@ -39,12 +49,14 @@
 			width: 100vw;
 			height: 50px;
 			z-index: 1;
-			/*overflow: visible;
-			overflow-x: hidden;*/
+			position: absolute;
+			left: 0;
+			top: -1rem;
 		}
 		.angled-sep-leading { transform: skewY(-1.7deg); }
 		.angled-sep-trailing { transform: skewY(1.7deg); }
-
+		.angled-content {
+		}
 		@media screen and (min-width: 30em) {
 			.test-breakpoint-ns::before { content: 'ns' }
 			.h-100v-ns { height: 100vh; }
@@ -184,52 +196,134 @@
 			<br />
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative bg-light-red">
-			<span class="angled-sep-leading h2 absolute top--1 left-0"></span>
-
-			<b class="db f4-ns f3-l mb1">
-				TODO Frontend
-			</b>
-			<span class="f6-ns f5-l db lh-copy measure">
-				lorem ipsum dolor…
-			</span>
-			<br />
+		<li class="pa3 pa4-ns pv4 relative light-color-01">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO Frontend
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					lorem ipsum dolor…
+				</span>
+				<br />
+			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pt3 relative bg-gray" style="color: #30bb30;">
-			<span class="angled-sep angled-sep-trailing h2 absolute top--1 left-0"></span>
-
-			<b class="db f4-ns f3-l mb1">
-				TODO Backend
-			</b>
-			<span class="f6-ns f5-l db lh-copy measure">
-				> echo "I 💙 Ubuntu"<br/>
-				> echo "I speak bash + docker"
-			</span>
-			<br />
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-02" style="color: #30bb30;">
+			<span class="angled-sep angled-sep-trailing"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO Backend
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					> echo "I 💙 Ubuntu"<br/>
+					> echo "I speak bash + docker"
+				</span>
+				<br />
+			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative bg-yellow">
-			<span class="angled-sep angled-sep-leading h2 absolute top--1 left-0"></span>
-
-			<b class="db f4-ns f3-l mb1">
-				TODO Team
-			</b>
-			<span class="f6-ns f5-l db lh-copy measure">
-				TODO
-			</span>
-			<br />
+		<li class="pa3 pa4-ns pv4 relative light-color-03">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO Team
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv3 pv2-ns relative bg-near-white">
-			<span class="angled-sep angled-sep-trailing h2 absolute top--1 left-0"></span>
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-04" style="color: #30bb30;">
+			<span class="angled-sep angled-sep-trailing"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
 
-			<b class="db f4-ns f3-l mb1 tc">
-				Still curious ?
-			</b>
-			<span class="f6-ns f5-l db lh-copy tc">
-				<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything⇢</a>
-			</span>
+		<li class="pa3 pa4-ns pv4 relative light-color-05">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-06" style="color: #30bb30;">
+			<span class="angled-sep angled-sep-trailing"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 relative light-color-07">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-08" style="color: #30bb30;">
+			<span class="angled-sep angled-sep-trailing"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 relative light-color-09">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					TODO
+				</span>
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 pt3 relative bg-near-white">
+			<span class="angled-sep angled-sep-trailing"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1 tc">
+					Still curious ?
+				</h1>
+				<span class="f6-ns f5-l db lh-copy tc">
+					<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything⇢</a>
+				</span>
+			</div>
 		</li>
 	</ul>
 
