@@ -24,7 +24,6 @@ hsl(77, 100%, 96%)
 
 
 
-
 ~~~~~~~~~~~~~~~~~~
 
 expérience
@@ -36,6 +35,10 @@ Photes avec équipe (light gallery)
 open source
 
 Paladin
+
+~~~~~~~~~~~~~~~~~~
+
+Functional programming
 
 ~~~~~~~~~~~~~~~~~~
 

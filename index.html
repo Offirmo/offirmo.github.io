@@ -6,7 +6,7 @@
 	<title>Offirmo - fullstack Developper</title>
 
 	<link rel="stylesheet" href="./assets/tachyons.4.1.0.min.css">
-	<xxlink rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
+	<xx-link rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
 	<style type="text/css">
 		@font-face{
 			font-family: 'Fira Code';
@@ -28,16 +28,25 @@
 			overflow-x: hidden;
 		}
 
-		.light-color-01 { background: hsl(28, 100%, 96%) }
-		.light-color-02 { background: hsl(103, 75.29%, 96%) }
-		.light-color-03 { background: hsl(10, 100%, 96%) }
-		.light-color-04 { background: hsl(147, 92.31%, 96%) }
-		.light-color-05 { background: hsl(345, 88.15%, 96%) }
-		.light-color-06 { background: hsl(176, 89.82%, 96%) }
-		.light-color-07 { background: hsl(232, 85.47%, 96%) }
-		.light-color-08 { background: hsl(137, 77.21%, 96%) }
-		.light-color-09 { background: hsl(214, 86.31%, 96%) }
-		.light-color-10 { background: hsl(77, 100%, 96%) }
+		.light-color-01 { background: hsl(200, 100%, 88%) }
+		.light-color-02 { background: hsl(262, 100%, 90%) }
+		.light-color-03 { background: hsl(328, 100%, 87.5%) }
+		.light-color-04 { background: hsl(87, 94.23%, 82.665%) }
+		.light-color-05 { background: hsl(188, 100%, 83.5%) }
+		.light-color-06 { background: hsl(67, 100%, 84.5%) }
+		.light-color-07 { background: hsl(198, 64.71%, 66%) }
+		.light-color-08 { background: hsl(93, 94.95%, 80.19000000000001%) }
+		.light-color-09 { background: hsl(246, 100%, 83%) }
+		.light-color-10 { background: hsl(218, 74.85%, 76.14%) }
+		.light-color-11 { background: hsl(51, 100%, 78.5%) }
+		/* ubuntu */
+		.bg-ubuntu-console { background: #300A24 }
+		.fg-ubuntu-console-white { color: #FCFFFF }
+		.fg-ubuntu-console-green { color: #89F935 }
+		/* european flag */
+		.bg-reflex-blue { background: #003399 }
+		.fg-yellow { color: #FFCC00 }
+
 
 		.more-about-me > li {
 		}
@@ -56,6 +65,8 @@
 		.angled-sep-leading { transform: skewY(-1.7deg); }
 		.angled-sep-trailing { transform: skewY(1.7deg); }
 		.angled-content {
+			xxposition: absolute;
+			z-index: 10;
 		}
 		@media screen and (min-width: 30em) {
 			.test-breakpoint-ns::before { content: 'ns' }
@@ -81,6 +92,23 @@
 			.h-100v-l { height: 100vh; }
 			.angled-sep-leading { transform: skewY(-1.0deg); }
 			.angled-sep-trailing { transform: skewY(1.0deg); }
+		}
+
+		#devops-l1 .typebot-blinker {
+			animation: blink2 1s infinite;
+			font-size: .65rem;
+			vertical-align: middle;
+		}
+		@keyframes blink2 {
+			0% {
+				color: transparent;
+			}
+			50% {
+				color: #FCFFFF;
+			}
+			100% {
+				color: transparent;
+			}
 		}
 
 	</style>
@@ -182,7 +210,7 @@
 		</div>
 
 		<div class="w-100 tc dn db-l absolute bottom-0">
-			<span class="f6 b">Let's team up ?</span><br />
+			<span class="f6 b">Want to team up ?</span><br />
 			<span class="f2 lh-solid">↯</span>
 		</div>
 	</article>
@@ -196,7 +224,7 @@
 			<br />
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-01">
+		<li id="aboutme-frontend" class="pa3 pa4-ns pv4 relative light-color-04">
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -206,41 +234,42 @@
 					lorem ipsum dolor…
 				</span>
 				<br />
+				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-02" style="color: #30bb30;">
+		<li id="aboutme-backend" class="pa3 pa4-ns pv4 pt3 relative light-color-02">
 			<span class="angled-sep angled-sep-trailing"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					TODO Backend
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					> echo "I 💙 Ubuntu"<br/>
-					> echo "I speak bash + docker"
-				</span>
-				<br />
-			</div>
-		</li>
-
-		<li class="pa3 pa4-ns pv4 relative light-color-03">
-			<span class="angled-sep angled-sep-leading"></span>
-			<div class="angled-content">
-				<h1 class="db f4-ns f3-l mb1">
-					TODO Team
-				</h1>
-				<span class="f6-ns f5-l db lh-copy measure">
 					TODO
 				</span>
 				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-04" style="color: #30bb30;">
+		<li id="aboutme-devops" class="pa3 pa4-ns pv4 relative bg-ubuntu-console fg-ubuntu-console-white">
+			<span class="angled-sep angled-sep-leading"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					TODO Devops
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					<span id="devops-l1"></span>
+				</span>
+				<br />
+				<br />
+			</div>
+		</li>
+
+		<li id="aboutme-security" class="pa3 pa4-ns pv4 pt3 relative light-color-11">
 			<span class="angled-sep angled-sep-trailing"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
-					TODO
+					Security
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
 					TODO
@@ -249,15 +278,16 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-05">
+		<li class="pa3 pa4-ns pv4 relative bg-reflex-blue fg-yellow">
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
-					TODO
+					European quality
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
 					TODO
 				</span>
+				<br />
 				<br />
 			</div>
 		</li>
@@ -285,6 +315,7 @@
 					TODO
 				</span>
 				<br />
+				<br />
 			</div>
 		</li>
 
@@ -310,6 +341,7 @@
 				<span class="f6-ns f5-l db lh-copy measure">
 					TODO
 				</span>
+				<br />
 				<br />
 			</div>
 		</li>
@@ -343,4 +375,66 @@
 			.map(s => { let e =document.createElement('li'); e.className="dib ph2 tracked-tight"; e.textContent = s; return e})
 			.forEach(e => skill_list_element.appendChild(e))
 	</script>
+	<script src="./assets/in-view.0.4.3.min.js" ></script>
+	<script src="./assets/typebot-5e04c0c-20160719.min.js" ></script>
+	<script src="./assets/baffle.0.3.6.min.js" ></script>
+	<script>
+		console.log(' _    _        _\n'
+			+ '| |  | |      | |\n'
+			+ '| |  | |  ___ | |  ___  ___   _ __ ___    ___\n'
+			+ '| |/\\| | / _ \\| | / __|/ _ \\ | \'_ ` _ \\  / _ \\\n'
+			+ '\\  /\\  /|  __/| || (__| (_) || | | | | ||  __/\n'
+			+ ' \\/  \\/  \\___||_| \\___|\\___/ |_| |_| |_| \\___|')
+
+		////////////////////////////////////
+
+		inView('#aboutme-frontend')
+			.on('enter', () => console.log('aboutme-frontend enter'))
+			.on('exit',  () => console.log('aboutme-frontend exit'))
+
+		////////////////////////////////////
+
+		// https://github.com/akZhy/typebot
+		var dtb
+		function init_devops_typebot() {
+			function addPrompt() {
+				var prompt = document.createElement('span')
+				prompt.className = 'fg-ubuntu-console-green'
+				prompt.innerHTML = '$ '
+				this.activeElement.insertBefore(prompt, this.activeElement.firstChild)
+			}
+			if (dtb) reset_devops_typebot()
+			dtb = new typebot('#devops-l1', 50, 50, [
+				'echo "I like Ubuntu LTS"',
+				'echo "I speak bash + docker"',
+				' '
+			], true, true)
+			dtb.onLayerStart(addPrompt)
+			dtb.onLayerEnd(function() {
+				this.blinker.style.visibility = "hidden";
+			});
+			dtb.done(function() {
+				this.blinker.style.visibility = "visible";
+			});
+			dtb.start()
+		}
+		function reset_devops_typebot() {
+			if (dtb) dtb.destroy()
+			dtb = null
+			document.querySelector('#devops-l1').innerHTML = ''
+		}
+
+		inView('#aboutme-devops')
+			.on('enter', init_devops_typebot)
+			.on('exit',  reset_devops_typebot)
+
+		////////////////////////////////////
+
+		// https://camwiegert.github.io/baffle/
+		var b = baffle('#aboutme-security h1',{xcharacters:["█","▓","▒","░","█","▓","▒","░","█","▓","▒","░","<",">","/"]})
+		inView('#aboutme-security')
+			.on('enter', function() { b.start(); b.reveal(3000)})
+			.on('exit', function() { b.stop() })
+	</script>
+
 </body>
