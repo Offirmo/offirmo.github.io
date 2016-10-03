@@ -367,6 +367,17 @@
 		</div>
 	</footer>
 
+	<!-- ------- GREETINGS ------- -->
+	<script>
+		console.log(' _    _        _\n'
+			+ '| |  | |      | |\n'
+			+ '| |  | |  ___ | |  ___  ___   _ __ ___    ___\n'
+			+ '| |/\\| | / _ \\| | / __|/ _ \\ | \'_ ` _ \\  / _ \\\n'
+			+ '\\  /\\  /|  __/| || (__| (_) || | | | | ||  __/\n'
+			+ ' \\/  \\/  \\___||_| \\___|\\___/ |_| |_| |_| \\___|')
+	</script>
+
+	<!-- ------- turn raw skill list to a better one ------- -->
 	<script>
 		const skill_list_element = document.querySelector('#skills-list')
 		const skills = skill_list_element.textContent.split(',').map(s => s.trim())
@@ -375,27 +386,15 @@
 			.map(s => { let e =document.createElement('li'); e.className="dib ph2 tracked-tight"; e.textContent = s; return e})
 			.forEach(e => skill_list_element.appendChild(e))
 	</script>
+
+	<!-- ------- detect entrance/leave from view ------- -->
 	<script src="./assets/in-view.0.4.3.min.js" ></script>
+
+	<!-- ------- simulate typing https://github.com/akZhy/typebot ------- -->
 	<script src="./assets/typebot-5e04c0c-20160719.min.js" ></script>
-	<script src="./assets/baffle.0.3.6.min.js" ></script>
+
 	<script>
-		console.log(' _    _        _\n'
-			+ '| |  | |      | |\n'
-			+ '| |  | |  ___ | |  ___  ___   _ __ ___    ___\n'
-			+ '| |/\\| | / _ \\| | / __|/ _ \\ | \'_ ` _ \\  / _ \\\n'
-			+ '\\  /\\  /|  __/| || (__| (_) || | | | | ||  __/\n'
-			+ ' \\/  \\/  \\___||_| \\___|\\___/ |_| |_| |_| \\___|')
-
-		////////////////////////////////////
-
-		inView('#aboutme-frontend')
-			.on('enter', () => console.log('aboutme-frontend enter'))
-			.on('exit',  () => console.log('aboutme-frontend exit'))
-
-		////////////////////////////////////
-
-		// https://github.com/akZhy/typebot
-		var dtb
+		var dtb = null
 		function init_devops_typebot() {
 			function addPrompt() {
 				var prompt = document.createElement('span')
@@ -427,11 +426,15 @@
 		inView('#aboutme-devops')
 			.on('enter', init_devops_typebot)
 			.on('exit',  reset_devops_typebot)
+	</script>
 
-		////////////////////////////////////
+	<!-- ------- hide / reveal text in a fancy fashion https://camwiegert.github.io/baffle/ ------- -->
+	<script src="./assets/baffle.0.3.6.min.js" ></script>
 
+	<script>
 		// https://camwiegert.github.io/baffle/
 		var b = baffle('#aboutme-security h1',{xcharacters:["█","▓","▒","░","█","▓","▒","░","█","▓","▒","░","<",">","/"]})
+
 		inView('#aboutme-security')
 			.on('enter', function() { b.start(); b.reveal(3000)})
 			.on('exit', function() { b.stop() })
