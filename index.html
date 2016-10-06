@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Offirmo - fullstack Developper</title>
 
-	<link rel="stylesheet" href="./assets/tachyons.4.1.0.min.css">
+	<link rel="stylesheet" href="./third-party/tachyons.4.1.0.min.css">
 	<xx-link rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
 	<style type="text/css">
 		@font-face{
 			font-family: 'Fira Code';
-			src: url('./assets/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot');
-			src: url('./assets/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot') format('embedded-opentype'),
-			url('./assets/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff2/FiraCode-Light.woff2') format('woff2'),
-			url('./assets/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff/FiraCode-Light.woff') format('woff'),
-			url('./assets/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/ttf/FiraCode-Light.ttf') format('truetype');
+			src: url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot');
+			src: url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot') format('embedded-opentype'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff2/FiraCode-Light.woff2') format('woff2'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff/FiraCode-Light.woff') format('woff'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/ttf/FiraCode-Light.ttf') format('truetype');
 			font-weight: 300;
 			font-style: normal;
 		}
@@ -388,10 +388,10 @@
 	</script>
 
 	<!-- ------- detect entrance/leave from view ------- -->
-	<script src="./assets/in-view.0.4.3.min.js" ></script>
+	<script src="./third-party/in-view.0.4.3.min.js" ></script>
 
 	<!-- ------- simulate typing https://github.com/akZhy/typebot ------- -->
-	<script src="./assets/typebot-5e04c0c-20160719.min.js" ></script>
+	<script src="./third-party/typebot-5e04c0c-20160719.min.js" ></script>
 
 	<script>
 		var dtb = null
@@ -429,15 +429,28 @@
 	</script>
 
 	<!-- ------- hide / reveal text in a fancy fashion https://camwiegert.github.io/baffle/ ------- -->
-	<script src="./assets/baffle.0.3.6.min.js" ></script>
+	<script src="./third-party/baffle.0.3.6.min.js" ></script>
 
 	<script>
 		// https://camwiegert.github.io/baffle/
 		var b = baffle('#aboutme-security h1',{xcharacters:["█","▓","▒","░","█","▓","▒","░","█","▓","▒","░","<",">","/"]})
 
+		var interval_id = null
+		function animate() { b.reveal(3000) }
+		function set_up() {
+			clear()
+			interval_id = window.setInterval(animate, 5 * 1000)
+			animate()
+		}
+		function clear() {
+			if(interval_id)
+				window.clearInterval(interval_id)
+			interval_id = null
+		}
+
 		inView('#aboutme-security')
-			.on('enter', function() { b.start(); b.reveal(3000)})
-			.on('exit', function() { b.stop() })
+			.on('enter', function() { b.start(); set_up() })
+			.on('exit', function() { b.stop(); clear() })
 	</script>
 
 </body>
