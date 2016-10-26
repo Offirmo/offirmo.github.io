@@ -2,6 +2,15 @@ Ideas
 
 Site épuré mais en fait riche
 
+Exemples
+* http://regagnon.com/
+* Franck
+* Hugo
+
+
+https://orcid.org/register
+
+
 https://github.com/sachinchoolur/lightgallery.js
 https://github.com/camwiegert/in-view
 console
@@ -22,7 +31,23 @@ hsl(214, 86.31%, 96%)
 hsl(77, 100%, 96%)
 
 
+~~~~~~~~~~~~~~~~~~
 
+JS
+I believe in web to fix stuff...
+web apps
+mobile apps
+server
+desktop apps
+IOT ?
+
+~~~~~~~~~~~~~~~~~~
+
+Front end
+- vanilla
+- full framework
+- CSS HTML DOM
+⨯ I am not a designer
 
 ~~~~~~~~~~~~~~~~~~
 
@@ -44,9 +69,6 @@ Functional programming
 
 console = server + typekit
 https
-
-## Frontend
-⨯ I am not a designer
 
 ## Backend
 > echo "I 💙 Ubuntu"<br/>
