@@ -4,6 +4,8 @@ Site épuré mais en fait riche
 
 Exemples
 * http://regagnon.com/
+* http://tomhodgins.com/
+* http://hackjutsu.com/geek-profile/
 * Franck
 * Hugo
 
