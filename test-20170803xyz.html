@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zendesk test</title>
+
+	<link rel="stylesheet" href="./third-party/tachyons.4.1.0.min.css">
+	<xx-link rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
+	<style type="text/css">
+		@font-face{
+			font-family: 'Fira Code';
+			src: url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot');
+			src: url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot') format('embedded-opentype'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff2/FiraCode-Light.woff2') format('woff2'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/woff/FiraCode-Light.woff') format('woff'),
+			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/ttf/FiraCode-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-style: normal;
+		}
+		body {
+			font: 14px/1.5em "Fira Code";
+			font-weight: 300;
+			font-feature-settings: "calt" 1;  /* Enable ligatures for IE 10+, Edge */
+			text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+
+			margin: 40px auto;
+			color: #333;
+			max-width: 650px;
+			line-height: 1.6;
+			font-size: 16px;
+			padding: 0 10px
+		}
+
+		h1, h2, h3 {
+			line-height: 1.2
+		}
+	</style>
+</head>
+
+<body class="mid-gray bg-near-white">
+
+	Hello world
+
+	<!-- Start of acme1044 Zendesk Widget script -->
+	<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="acme1044.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
+	/*]]>*/</script>
+	<!-- End of acme1044 Zendesk Widget script -->
+
+	<!--Start of Zendesk Chat Script-->
+	<script type="text/javascript">
+		window.$zopim||(function(d,s){var z=$zopim=function(c){
+			z._.push(c)},$=z.s=
+			d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+			$.src='https://v2.zopim.com/?vmDKPECN7Dl6yo4OOzCBZAfntvx4OfPN';z.t=+new Date;$.
+				type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+	</script>
+	<!--End of Zendesk Chat Script-->
+
+
+</body>
