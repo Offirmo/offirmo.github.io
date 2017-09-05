@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.html",
   "scripts": {
-    "build": "",
+    "build": "echo 'no build!!!'",
     "test": "echo 'no tests !'"
   },
   "repository": {
@@ -24,8 +24,10 @@
   "homepage": "https://github.com/Offirmo/offirmo.github.io#readme",
   "dependencies": {
     "baffle": "^0.3.6",
-    "in-view": "^0.4.3",
-    "tachyons": "^4.1.0"
+    "in-view": "^0.6.1",
+    "tachyons": "^4.8.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "tachyons-debug": "^1.1.10"
+  }
 }
