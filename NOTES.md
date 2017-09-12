@@ -8,6 +8,7 @@ Exemples
 * http://hackjutsu.com/geek-profile/
 * Franck
 * Hugo
+* http://thejameskyle.com/
 
 
 https://orcid.org/register
