@@ -9,6 +9,9 @@ Exemples
 * Franck
 * Hugo
 * http://thejameskyle.com/
+* https://github.com/sindresorhus/sindresorhus.github.com
+* https://github.com/sindresorhus/hi
+
 
 
 https://orcid.org/register
