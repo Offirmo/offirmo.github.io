@@ -1,6 +1,6 @@
 # [offirmo.github.io](http://offirmo.github.io)
 
-Contractor personal webpage, to be hosted on github pages.
+Personal webpage, to be hosted on github pages.
 
 Pure Vanilla because I wanted to try it ;)
 
@@ -12,3 +12,6 @@ Pure Vanilla because I wanted to try it ;)
 - typebot https://github.com/thoughtbot/typebot
 - Some colors were generated with https://github.com/davidmerfield/randomColor
 - Some colors were taken from the Ubuntu Terminal color scheme
+- Advices
+  - https://vanschneider.com/a-love-letter-to-personal-websites
+  - https://vanschneider.com/the-most-important-page-on-your-portfolio

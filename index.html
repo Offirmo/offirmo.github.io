@@ -7,7 +7,7 @@
 
 	<meta name="google-site-verification" content="O2l06W0gN92s7grxWHUb4oofTYaOsgqUcjylYhF7Z78" />
 
-	<link rel="stylesheet" href="./third-party/tachyons@4.8.1.min.css">
+	<link rel="stylesheet" href="./third-party/tachyons@4.12.0.min.css">
 	<xx-link rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
 	<style type="text/css">
 		@font-face{
@@ -95,8 +95,17 @@
 			.angled-sep-trailing { transform: skewY(1.0deg); }
 		}
 
+		.blinking {
+			animation: blinkingText 1.2s infinite ease-in-out;
+		}
+		@keyframes blinkingText{
+			0% {  color: inherit; }
+			33% { color: transparent; }
+		}
+
 		#devops-l1 .typebot-blinker {
 			animation: blink2 1s infinite;
+			color: #FCFFFF;
 			font-size: .65rem;
 			vertical-align: middle;
 		}
@@ -105,11 +114,15 @@
 				color: transparent;
 			}
 			50% {
-				color: #FCFFFF;
+				color: inherit;
 			}
 			100% {
 				color: transparent;
 			}
+		}
+
+		a {
+			color: inherit;
 		}
 
 	</style>
@@ -129,7 +142,7 @@
 				<!-- http://tachyons.io/components/collections/profile-card-title-subtitle/index.html -->
 				<div class="mw7 center mt3">
 					<div class="tc">
-						<img src="./assets/avatar_333x333.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Offirmo's avatar">
+						<img src="./assets/offirmo_512x512b.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Offirmo's avatar">
 						<h1 class="f3 mb2">Offirmo</h1>
 						<h2 class="f5 fw4 mt0">Fullstack Developper</h2>
 						<h2 class="f5 fw4 mt0 v-mid">
@@ -228,7 +241,7 @@
 		<li id="aboutme-frontend" class="pa3 pa4-ns pv4 relative light-color-04">
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
-				<h1 class="db f4-ns f3-l mb1">
+				<h1 class="db f4-ns f3-l mb1 blinking">
 					Frontend
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">

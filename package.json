@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/Offirmo/offirmo.github.io#readme",
   "dependencies": {
-    "baffle": "^0.3.6",
-    "in-view": "^0.6.1",
-    "tachyons": "^4.8.1"
+    "baffle": "^0.3",
+    "in-view": "^0.6",
+    "tachyons": "^4"
   },
   "devDependencies": {
-    "tachyons-debug": "^1.1.10"
+    "tachyons-debug": "^1"
   }
 }
