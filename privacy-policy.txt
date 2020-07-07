@@ -1,0 +1,18 @@
+
+# Privacy policy
+
+I, Offirmo, develop open-source tools, modules and games as a hobby.
+
+I will never sell any personal data.
+
+I will never gather un-needed personal data.
+
+I seldom collect personal data strictly needed for the corresponding service. For example I need your email and a password to provide you with an account holding your cloud save.
+
+I will keep secure any personal data I collect as much as I can, keeping in mind that I'm a sole developer.
+
+I may use your email to build a private mailing list as explained here: https://jerryjenkins.com/writing-tips/#writingtip4 however I will never sell this list and promptly remove you if you ask.
+
+My sites may use Netlify Identity, see their privacy policy: https://www.netlify.com/privacy/
+
+My tools/sites may send analytics using Google Analytics, see their privacy policy: https://policies.google.com/privacy

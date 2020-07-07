@@ -8,8 +8,9 @@
 	<meta name="google-site-verification" content="O2l06W0gN92s7grxWHUb4oofTYaOsgqUcjylYhF7Z78" />
 
 	<link rel="stylesheet" href="./third-party/tachyons@4.12.0.min.css">
-	<xx-link rel="stylesheet" href="./node_modules/tachyons-debug/css/tachyons-debug.css">
 	<style type="text/css">
+		/*@import './node_modules/tachyons-debug/css/tachyons-debug.css';*/
+
 		@font-face{
 			font-family: 'Fira Code';
 			src: url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/eot/FiraCode-Light.eot');
@@ -21,6 +22,8 @@
 			font-style: normal;
 		}
 		body {
+			--angled-sep-skew: 1.7deg;
+
 			font: 14px/1.5em "Fira Code";
 			font-weight: 300;
 			font-feature-settings: "calt" 1;  /* Enable ligatures for IE 10+, Edge */
@@ -38,9 +41,10 @@
 		.light-color-06 { background: hsl(67, 100%, 84.5%) }
 		.light-color-07 { background: hsl(198, 64.71%, 66%) }
 		.light-color-08 { background: hsl(93, 94.95%, 80.19%) }
-		.light-color-09 { background: hsl(246, 100%, 83%) }
+		.light-color-09 { background: hsl(241, 90%, 88%) }
 		.light-color-10 { background: hsl(218, 74.85%, 76.14%) }
 		.light-color-11 { background: hsl(51, 100%, 78.5%) }
+		.light-color-12 { background: hsl(36, 100%, 84%) }
 		/* ubuntu */
 		.bg-ubuntu-console { background: #300A24 }
 		.fg-ubuntu-console-white { color: #FCFFFF }
@@ -63,17 +67,18 @@
 			position: absolute;
 			left: 0;
 			top: -1rem;
+			transform: skewY(calc(var(--angled-sep-direction, 1) * var(--angled-sep-skew, 1.7deg)));
 		}
-		.angled-sep-leading { transform: skewY(-1.7deg); }
-		.angled-sep-trailing { transform: skewY(1.7deg); }
+		body > ul > li:nth-child(even) { --angled-sep-direction: -1; }
+		body > ul > li:nth-child(odd) { --angled-sep-direction: 1; }
+
 		.angled-content {
 			z-index: 10;
 		}
 		@media screen and (min-width: 30em) {
+			body { --angled-sep-skew: 1.2deg; }
 			.test-breakpoint-ns::before { content: 'ns' }
 			.h-100v-ns { height: 100vh; }
-			.angled-sep-leading { transform: skewY(-1.2deg); }
-			.angled-sep-trailing { transform: skewY(1.2deg); }
 			.va-mid-ns {
 				position: relative;
 				top: 50%;
@@ -82,17 +87,15 @@
 		}
 
 		@media screen and (min-width: 30em) and (max-width: 60em) {
+			body { --angled-sep-skew: 1.2deg; }
 			.test-breakpoint-m::before { content: 'm' }
 			.h-100v-m { height: 100vh; }
-			.angled-sep-leading { transform: skewY(-1.2deg); }
-			.angled-sep-trailing { transform: skewY(1.2deg); }
 		}
 
 		@media screen and (min-width: 60em) {
+			body { --angled-sep-skew: 1deg; }
 			.test-breakpoint-l::before { content: 'l' }
 			.h-100v-l { height: 100vh; }
-			.angled-sep-leading { transform: skewY(-1.0deg); }
-			.angled-sep-trailing { transform: skewY(1.0deg); }
 		}
 
 		.blinking {
@@ -258,8 +261,8 @@
 			<br />
 		</li>
 
-		<li id="aboutme-frontend" class="pa3 pa4-ns pv4 relative light-color-04">
-			<span class="angled-sep angled-sep-leading"></span>
+		<li class="pa3 pa4-ns pv4 relative light-color-05">
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 adjust--left blinking">
 					Frontend
@@ -275,8 +278,8 @@
 			</div>
 		</li>
 
-		<li id="aboutme-backend" class="pa3 pa4-ns pv4 pt3 relative light-color-02">
-			<span class="angled-sep angled-sep-trailing"></span>
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-07 navy">
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 adjust--left">
 					Backend
@@ -291,7 +294,7 @@
 		</li>
 
 		<li id="aboutme-devops" class="pa3 pa4-ns pv4 relative bg-ubuntu-console fg-ubuntu-console-white">
-			<span class="angled-sep angled-sep-leading"></span>
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Devops
@@ -304,8 +307,8 @@
 			</div>
 		</li>
 
-		<li id="aboutme-security" class="pa3 pa4-ns pv4 pt3 relative light-color-11">
-			<span class="angled-sep angled-sep-trailing"></span>
+		<li id="aboutme-security" class="pa3 pa4-ns pv4 pt3 relative light-color-12">
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Security
@@ -319,8 +322,23 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-07">
-			<span class="angled-sep angled-sep-leading"></span>
+		<li class="pa3 pa4-ns pv4 relative light-color-09 navy">
+			<span class="angled-sep"></span>
+			<div class="angled-content">
+				<h1 class="db f4-ns f3-l mb1">
+					Scale
+				</h1>
+				<span class="f6-ns f5-l db lh-copy measure">
+					<p>My code is currently used by 2.8M enterprise customers (monthly).</p>
+					<p>I deliver mindful of performance, reliability, security, observability, legal constraints.</p>
+				</span>
+				<br />
+				<br />
+			</div>
+		</li>
+
+		<li class="pa3 pa4-ns pv4 relative light-color-11">
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					All JavaScript
@@ -335,15 +353,15 @@
 					- 📱 WebView mobile apps (Cordova/PhoneGap)<br />
 					<!-- Desktop Apps (Electron)<br /> -->
 					<!-- IOT<br /> -->
-					<i>(But also curious about Rust 😉)</i>
+					<i>But also curious about Rust</i> 😉
 				</span>
 				<br />
 				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-06">
-			<span class="angled-sep angled-sep-trailing"></span>
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-01">
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Portfolio / experiments
@@ -365,22 +383,8 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-09">
-			<span class="angled-sep angled-sep-leading"></span>
-			<div class="angled-content">
-				<h1 class="db f4-ns f3-l mb1">
-					Open Source
-				</h1>
-				<span class="f6-ns f5-l db lh-copy measure">
-					TODO
-				</span>
-				<br />
-				<br />
-			</div>
-		</li>
-
 		<li class="pa3 pa4-ns pv4 pt3 relative light-color-08">
-			<span class="angled-sep angled-sep-trailing"></span>
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Creator
@@ -437,7 +441,7 @@
 		</li>
 
 		<li class="pa3 pa4-ns pv4 relative bg-reflex-blue fg-yellow">
-			<span class="angled-sep angled-sep-leading"></span>
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					European quality ★★★
@@ -445,7 +449,7 @@
 				<span class="f6-ns f5-l db lh-copy measure">
 					Born, raised and taught in Europe,<br />
 					later moved to <span style="transform: rotate(180deg); display: inline-block; vertical-align: middle;">Australia</span>.<br />
-					<i>English is not my first language 😉</i>
+					<i>English is not my first language</i> 😉
 				</span>
 				<br />
 				<br />
@@ -453,7 +457,7 @@
 		</li>
 
 		<li class="pa3 pa4-ns pv4 pt3 relative bg-near-white">
-			<span class="angled-sep angled-sep-trailing"></span>
+			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 tc">
 					Still curious ?
