@@ -125,6 +125,10 @@
 			color: inherit;
 		}
 
+		.adjust--left {
+			margin-left: -0.1rem;
+		}
+
 	</style>
 </head>
 
@@ -142,15 +146,15 @@
 				<!-- http://tachyons.io/components/collections/profile-card-title-subtitle/index.html -->
 				<div class="mw7 center mt3">
 					<div class="tc">
-						<img src="./assets/offirmo_512x512b.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Offirmo's avatar">
+						<img src="./assets/offirmo_512x512b.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Offirmo’s avatar">
 						<h1 class="f3 mb2">Offirmo</h1>
-						<h2 class="f5 fw4 mt0">Fullstack Developper</h2>
+						<h2 class="f5 fw4 mt0">Software Engineer & Creator</h2>
 						<h2 class="f5 fw4 mt0 v-mid">
 							<svg class="w1 h2 gray v-mid" data-icon="position-icon" viewBox="100 -50 312 712" style="fill:currentcolor">
 								<title>GPS marker icon</title>
 								<path d="M256 0c-88.366 0-160 71.634-160 160 0 160 160 352 160 352s160-192 160-352c0-88.366-71.635-160-160-160zM256 256c-53.020 0-96-42.98-96-96s42.98-96 96-96 96 42.98 96 96-42.98 96-96 96z"></path>
 							</svg>
-							<span>Sydney + Paris + Nomad</span>
+							<span>Europe → Australia</span>
 						</h2>
 					</div>
 				</div>
@@ -158,40 +162,57 @@
 				<p class="tc">
 					<!-- https://github.com/markhuge/svg-social-icons -->
 					<a class="link dim gray dib h2 w2 pa2"
-						href="https://github.com/Offirmo" title="Offirmo's GitHub profile">
+						href="https://github.com/Offirmo"
+						title="Offirmo’s GitHub profile"
+						target="_blank">
 						<svg data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor">
-							<title>github icon</title>
 							<path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path>
 						</svg>
 					</a>
 					<a class="link dim gray dib h2 w2 pa2"
-						href="http://stackoverflow.com/users/587407/offirmo?tab=profile" title="Offirmo's Stack Overflow profile">
+						href="http://stackoverflow.com/users/587407/offirmo?tab=profile"
+						title="Offirmo’s Stack Overflow profile"
+						target="_blank">
 						<svg data-icon="Stack Overflow" viewBox="-25 -25 600 600" style="fill:currentcolor">
-							<title>Stack Overflow icon</title>
 							<path d="M512 320v192h-512v-192h64v128h384v-128zM96 352h320v64h-320zM103.576 282.733l13.849-62.482 312.416 69.248-13.849 62.482zM139.829 154.279l27.046-58.003 290.016 135.232-27.046 58.003zM495.861 180.738l-38.961 50.775-253.873-194.804 28.168-36.709h29.122z"></path>
 						</svg>
 					</a>
 					<a class="link dim gray dib h2 w2 pa2"
-						href="https://fr.linkedin.com/in/yves-emmanuel-jutard-6775521" title="Offirmo's LinkedIn profile">
+						href="#"
+						title="Offirmo’s LinkedIn profile"
+						onclick="window.alert('For privacy, I’m separating my creator/online persona from my real-life one. Feel free to contact me by email: offirmo.net(@)gmail.com and I’ll direct you to my LinkedIn page.')">
 						<svg data-icon="linkedin" viewBox="16 16 32 32" style="fill:currentcolor">
-							<title>linkedin icon</title>
 							<path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"></path>
 						</svg>
 					</a>
 					<a class="link dim gray dib h2 w2 pa2"
-						href="https://medium.com/@Offirmo" title="Offirmo's Medium stories">
+						href="https://medium.com/@Offirmo"
+						title="Offirmo’s Medium stories"
+						target="_blank">
 						<svg data-icon="medium" viewBox="14 14 34 34" style="fill:currentcolor">
-							<title>medium blog platform icon</title>
 							<path d="M47,23.7h-1.2c-0.4,0-0.9,0.6-0.9,1v14.7c0,0.4,0.5,1,0.9,1H47v3.4H36.4v-3.4h2.1V24.9h-0.1 l-5.3,18.9h-4.1l-5.2-18.9h-0.1v15.5H26v3.4h-9v-3.4h1.2c0.5,0,1-0.6,1-1V24.7c0-0.4-0.5-1-1-1H17v-3.6h11.3l3.7,13.8h0.1l3.7-13.8 H47V23.7z"></path>
 						</svg>
 					</a>
 					<a class="link dim gray dib h2 w2 pa2"
-						href="mailto:offirmo(dot)net(at)gmail.com" title="Offirmo's email">
+						href="mailto:offirmo(dot)net(at)gmail.com"
+						title="Offirmo’s email"
+						onclick="window.alert('offirmo.net+pws(@)gmail.com')"
+						target="_blank">
 						<svg data-icon="email" viewBox="16 16 32 32" style="fill:currentcolor">
-							<title>email icon</title>
 							<path d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z"></path>
 						</svg>
 					</a>
+					<a class="link dim gray dib h2 w2 pa2"
+						href="https://www.instagram.com/offirmo/"
+						title="Offirmo’s Instagram"
+						target="_blank">
+						<svg data-icon="instagram" viewBox="16 16 32 32" style="fill:currentcolor">
+							<path d="M43.5,29.7h-2.6c0.2,0.7,0.3,1.5,0.3,2.3 c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2c0-0.8,0.1-1.6,0.3-2.3h-2.6v12.7c0,0.6,0.5,1.2,1.2,1.2h20.8c0.6,0,1.2-0.5,1.2-1.2 V29.7z M43.5,21.6c0-0.6-0.5-1.2-1.2-1.2h-3.5c-0.6,0-1.2,0.5-1.2,1.2v3.5c0,0.6,0.5,1.2,1.2,1.2h3.5c0.6,0,1.2-0.5,1.2-1.2V21.6z  M32,26.2c-3.2,0-5.8,2.6-5.8,5.8c0,3.2,2.6,5.8,5.8,5.8s5.8-2.6,5.8-5.8C37.8,28.8,35.2,26.2,32,26.2 M43.5,47H20.5 c-1.9,0-3.5-1.6-3.5-3.5V20.5c0-1.9,1.5-3.5,3.5-3.5h23.1c1.9,0,3.5,1.5,3.5,3.5v23.1C47,45.4,45.5,47,43.5,47"></path>
+						</svg>
+					</a>
+					<!-- npm -->
+					<!-- buy me a coffee -->
+					<!-- patreon -->
 				</p>
 
 			</div>
@@ -206,15 +227,14 @@
 				</ul>
 
 				<ul id="skills-list" class="list ph3 ph5-ns pv2">
-					javascript, node.js, express.js, AngularJS, React,
-					npm, jspm, require.js, appcache,
+					JavaScript, React, Redux, Rx.js, AngularJS, PWAs,
+					npm, Node.js, express.js,
 					mocha+chai, eslint, Babel,
-					typescript, typings, tslint,
+					TypeScript, typings, tslint,
 					Bootstrap, dust.js, FormatJS,
-					Redux, Rx.js,
 					Git, GitHub+enterprise,
 					Jenkins, Travis CI, sass, Selenium, Protractor,
-					Docker, Vagrant, puppet, heroku, Amazon AWS,
+					Docker, Vagrant, puppet, Netlify, heroku, Amazon AWS,
 					Bash, Python, Ruby, Perl,
 					Linux, Ubuntu, BSD, kernel & network programming, drivers,
 					PostgreSQL, MongoDB,
@@ -224,8 +244,8 @@
 		</div>
 
 		<div class="w-100 tc dn db-l absolute bottom-0">
-			<span class="f6 b">Want to team up ?</span><br />
-			<span class="f2 lh-solid">↯</span>
+			<span class="f4 b">Want to team up ?</span><br />
+			<span class="f1 lh-solid">↯</span>
 		</div>
 	</article>
 
@@ -233,7 +253,7 @@
 
 		<li class="pa3 pa4-ns pv3 tc">
 			<b class="db f3 mb1">
-				Let's team up !
+				Let’s team up !
 			</b>
 			<br />
 		</li>
@@ -241,14 +261,14 @@
 		<li id="aboutme-frontend" class="pa3 pa4-ns pv4 relative light-color-04">
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
-				<h1 class="db f4-ns f3-l mb1 blinking">
+				<h1 class="db f4-ns f3-l mb1 adjust--left blinking">
 					Frontend
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					Full-fledged SPA -> static sites<br />
+					From Full-fledged PWA to static sites<br />
 					with React, AngularJS, Vanilla…<br />
 					Did you notice this website was responsive ?<br />
-					<i>I'm not a designer, though.</i>
+					<i>I’m not a designer, though.</i>
 				</span>
 				<br />
 				<br />
@@ -258,13 +278,13 @@
 		<li id="aboutme-backend" class="pa3 pa4-ns pv4 pt3 relative light-color-02">
 			<span class="angled-sep angled-sep-trailing"></span>
 			<div class="angled-content">
-				<h1 class="db f4-ns f3-l mb1">
+				<h1 class="db f4-ns f3-l mb1 adjust--left">
 					Backend
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					Need an API ? Node.js + express on the rescue.<br />
-					Microservices are great + a bunch of DBs. Let's make them talk to each other!<br />
-					<i>I'm working on my system design skills.</i>
+					Need an API ? Serverless Node.js to the rescue.<br />
+					Microservices are great + a bunch of DBs. Let’s make them talk to each other!<br />
+					<i>I’m working on my system design skills.</i>
 				</span>
 				<br />
 			</div>
@@ -292,8 +312,8 @@
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
 					Security conscious.<br />
-					2 significative experiences in security companies.<br />
-					<i>Knowing my limits and what is dangerous</i>
+					2 significant experiences in security companies.<br />
+					<i>Knowing my limits and what is dangerous.</i>
 				</span>
 				<br />
 			</div>
@@ -306,29 +326,39 @@
 					All JavaScript
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					JavaScript is such a versatile tech. I tried:<br />
-					- Browser extensions (WebExtensions)<br />
-					- Mobile Apps (manifest, PhoneGap)<br />
-					- <i>coming soon</i> Desktop Apps (Electron)<br />
-					<i>(But also curious about Golang and Scala ;-)</i>
+					TypeScript is my versatile technology of choice:<br />
+					- 💻 frontend (Progressive Web Apps)<br />
+					- 🗄 backend (serverless, Node.js)<br />
+					- 📦 <a href="https://www.offirmo.net/offirmo-monorepo/0-doc/modules-directory/index.html" target="_blank">npm modules</a> (isomorphic, dedicated)<br />
+					- 💾 CLI tools (Node.js)<br />
+					- 🧩 <a href="https://universal-debug-api-js.netlify.app/" target="_blank">Browser extensions</a> (WebExtensions)<br />
+					- 📱 WebView mobile apps (Cordova/PhoneGap)<br />
+					<!-- Desktop Apps (Electron)<br /> -->
+					<!-- IOT<br /> -->
+					<i>(But also curious about Rust 😉)</i>
 				</span>
 				<br />
 				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-06" style="color: #30bb30;">
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-06">
 			<span class="angled-sep angled-sep-trailing"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Portfolio / experiments
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					- I'm trying to make <a href="http://www.online-adventur.es/the-npm-rpg.html">a game</a>…<br />
-					&nbsp;&nbsp;<small>-> Heroku, mobile first, i18n, AngularJS, Express…</small><br />
+					- Pet project: <a href="https://www.online-adventur.es/apps/the-boring-rpg/">The Boring RPG</a>
+					<a href="https://www.online-adventur.es/apps/the-boring-rpg/"><img
+						src="https://cdn.jsdelivr.net/gh/Offirmo/offirmo-monorepo/A-apps/the-boring-rpg/client-browser/src/favicons/favicon.svg"
+						style="height: 1.3rem; vertical-align: text-bottom;"
+					/></a>
+					(browser game)<br />
+					&nbsp;&nbsp;<small>-> React, PWA, offline-first, serverless, PostGreSQL</small><br />
 					- a <a href="http://www.offirmo.net/minisite-wedding-ghpages/">wedding mini-site</a> (password = secret)<br />
-					&nbsp;&nbsp;<small>-> GitHub pages, ES6, Vanilla…</small><br />
-					- my latest experiment, a <a href="http://www.offirmo.net/minisite-bookmarks-ghpages/">bookmark page</a><br />
+					&nbsp;&nbsp;<small>-> GitHub pages, ES6, VanillaJS…</small><br />
+					- a <a href="http://www.offirmo.net/minisite-bookmarks-ghpages/">bookmark tool</a><br />
 					&nbsp;&nbsp;<small>-> GitHub pages, TypeScript, AMD, RxJS…</small>
 				</span>
 				<br />
@@ -339,24 +369,68 @@
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
-					TODO
+					Open Source
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					I'm sure I can put something interesting here...
+					TODO
 				</span>
 				<br />
 				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-08" style="color: #30bb30;">
+		<li class="pa3 pa4-ns pv4 pt3 relative light-color-08">
 			<span class="angled-sep angled-sep-trailing"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
-					TODO
+					Creator
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					Lorem ipsum dolor…
+					<p>Please support my game, assets and open-source development:</p>
+					<style>
+						.bmc-button img {
+							height: 34px !important;
+							width: 35px !important;
+							margin-bottom: 1px !important;
+							box-shadow: none !important;
+							border: none !important;
+							vertical-align: middle !important;
+						}
+						.bmc-button {
+							padding: 7px 15px 7px 10px !important;
+							line-height: 35px !important;
+							height:51px !important;
+							text-decoration: none !important;
+							display:inline-flex !important;
+							color:#000000 !important;
+							background-color:#FFFFFF !important;
+							border-radius: 5px !important;
+							border: 1px solid transparent !important;
+							font-size: 28px !important;
+							letter-spacing:0.6px !important;
+							box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+							-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+							margin: 0 auto !important;
+							font-family:'Cookie', cursive !important;
+							-webkit-box-sizing: border-box !important;
+							box-sizing: border-box !important;
+						}
+						.bmc-button:hover, .bmc-button:active, .bmc-button:focus {
+							-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+							text-decoration: none !important;
+							box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+							/*opacity: 0.85 !important;
+							color: rgba(0, 0, 0, 0.85) !important;
+							 */
+							background-color: #f0f0f0 !important;
+						}
+					</style>
+					<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+					<a class="bmc-button" target="_blank"
+						href="https://www.buymeacoffee.com/offirmo">
+						<img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee">
+						<span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span>
+					</a>
 				</span>
 				<br />
 			</div>
@@ -366,12 +440,12 @@
 			<span class="angled-sep angled-sep-leading"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
-					European quality
+					European quality ★★★
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					Proud of my roots,<br />
-					secure in my identity,<br />
-					thus open to other cultures!
+					Born, raised and taught in Europe,<br />
+					later moved to <span style="transform: rotate(180deg); display: inline-block; vertical-align: middle;">Australia</span>.<br />
+					<i>English is not my first language 😉</i>
 				</span>
 				<br />
 				<br />
@@ -385,18 +459,18 @@
 					Still curious ?
 				</h1>
 				<span class="f6-ns f5-l db lh-copy tc">
-					<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything⇢</a>
+					<a class="link b dim navy" href="https://github.com/Offirmo/ama">Ask me anything ⇢</a>
 				</span>
 			</div>
 		</li>
 	</ul>
 
 	<footer class="pv2 ph3 ph5-m ph6-l mid-gray">
-		<small class="f6 db tc">©2016-2017 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
-		<div class="tc mt1">
+		<small class="f6 db tc">©2016-2020 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
+		<!-- <div class="tc mt1">
 			<a href="#"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
 			<a href="#"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Credits</a>
-		</div>
+		</div> -->
 	</footer>
 
 	<!-- ------- GREETINGS ------- -->
@@ -483,6 +557,8 @@
 		inView('#aboutme-security')
 			.on('enter', function() { b.start(); set_up() })
 			.on('exit', function() { b.stop(); clear() })
+
+		// TODO analytics
 	</script>
 
 </body>
