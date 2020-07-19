@@ -135,6 +135,12 @@
 		}
 
 	</style>
+	<script>
+		// https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tag
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-70800748-3', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
 <body class="mid-gray bg-near-white">
@@ -572,8 +578,6 @@
 		inView('#aboutme-security')
 			.on('enter', function() { b.start(); set_up() })
 			.on('exit', function() { b.stop(); clear() })
-
-		// TODO analytics
 	</script>
-
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
 </body>
