@@ -1,10 +1,10 @@
-# [offirmo.github.io](http://offirmo.github.io)
+# [offirmo.github.io](https://offirmo.github.io)
 
 Personal webpage, to be hosted on github pages.
 
 Pure Vanilla because I wanted to try it ;)
 
-## See it live: http://www.offirmo.net/
+## See it live: https://www.offirmo.net/
 
 ## Credits
 - see [`package.json`](https://github.com/Offirmo/offirmo.github.io/blob/master/package.json)

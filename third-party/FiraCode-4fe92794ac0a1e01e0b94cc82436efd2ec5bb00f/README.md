@@ -42,24 +42,24 @@ Works | Doesn’t work
 **Coda 2** | **Monkey Studio IDE**
 **CodeLite** | **Notepad++**
 **Eclipse** (Linux) | **Spyder IDE**
-**Geany** | **SublimeText** ([vote here](http://sublimetext.userecho.com/topic/1030059-does-sublimetext-support-programming-ligatures-fontlike-fira-code/))
-**gEdit / Pluma** | 
-**GNOME Builder** | 
-**IntelliJ IDEA** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) | 
+**Geany** | **SublimeText** ([vote here](https://sublimetext.userecho.com/topic/1030059-does-sublimetext-support-programming-ligatures-fontlike-fira-code/))
+**gEdit / Pluma** |
+**GNOME Builder** |
+**IntelliJ IDEA** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 **Kate, KWrite** |
 **Komodo** |
 **Leafpad** |
 **LibreOffice** |
-**LightTable** ([instructions](https://github.com/tonsky/FiraCode/wiki/LightTable-instructions)) | 
+**LightTable** ([instructions](https://github.com/tonsky/FiraCode/wiki/LightTable-instructions)) |
 **MacVim** 7.4 or newer ([instructions](https://github.com/tonsky/FiraCode/wiki/MacVim-instructions)) |
 **Mancy** |
 **Meld** |
 **Mousepad** |
-**NetBeans** | 
+**NetBeans** |
 **Notepad** (Win) |
 **PhpStorm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 **PyCharm** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
-**QtCreator** | 
+**QtCreator** |
 **RStudio** ([instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)) |
 **RubyMine** (2016.2+, [instructions](https://github.com/tonsky/FiraCode/wiki/Intellij-products-instructions)) |
 **Scratch** |
@@ -115,8 +115,8 @@ Clojure:
 Other monospaced fonts with ligatures:
 
 - [Hasklig](https://github.com/i-tu/Hasklig) (free)
-- [PragmataPro](http://www.fsd.it/fonts/pragmatapro.htm) (€59)
-- [Monoid](http://larsenwork.com/monoid/) (free)
+- [PragmataPro](https://www.fsd.it/fonts/pragmatapro.htm) (€59)
+- [Monoid](https://larsenwork.com/monoid/) (free)
 - [Fixedsys Excelsior](https://github.com/kika/fixedsys) (free)
 - [Iosevka](https://be5invis.github.io/Iosevka/) (free)
 - [DejaVu Sans Code](https://github.com/SSNikolaevich/DejaVuSansCode) (free)
@@ -175,10 +175,10 @@ Fira Code is now drawn and built in Glyphs 2 app (should improve compatibility).
 
 Added:
 
-`<->` `<~~` `<~` `~~~` `~>` `~~>`  
-`<$` `<+` `<*` `*>` `+>` `$>`  
-`;;;` `:::` `!!!` `???` `%%` `%%%` `##` `###` `####`  
-`.-` `#_(` `=<`  `**/` `0x` `www` `[]` 
+`<->` `<~~` `<~` `~~~` `~>` `~~>`
+`<$` `<+` `<*` `*>` `+>` `$>`
+`;;;` `:::` `!!!` `???` `%%` `%%%` `##` `###` `####`
+`.-` `#_(` `=<`  `**/` `0x` `www` `[]`
 
 Redrawn:
 
@@ -195,13 +195,13 @@ Redrawn from Fira Mono 3.204 (slightly heavier weight)
 
 Added:
 
-`**` `***` `+++` `--` `---` `?:`  
-`/=` `/==` `.=` `^=` `=~` `?=` `||=` `|=`  
-`<<<` `<=<` `-<<` `-<` `>-` `>>-` `>=>` `>>>`  
-`<*>` `<|>` `<$>` `<+>`  
+`**` `***` `+++` `--` `---` `?:`
+`/=` `/==` `.=` `^=` `=~` `?=` `||=` `|=`
+`<<<` `<=<` `-<<` `-<` `>-` `>>-` `>=>` `>>>`
+`<*>` `<|>` `<$>` `<+>`
 `<!--` `{-` `-}` `/**`  `\\` `\\\`
-`..<` `??` `|||` `&&&` `<|` `|>`  
-  
+`..<` `??` `|||` `&&&` `<|` `|>`
+
 Added support for Powerline
 
 
@@ -234,7 +234,7 @@ Added: `-->` `<--` `&&` `||` `=>>` `=/=`
 
 #### 0.1
 
-`>>=` `=<<` `<<=` `->>` `->` `=>` `<<-` `<-`  
-`===` `==` `<=>` `>=` `<=` `>>` `<<` `!==` `!=` `<>`  
-`:=` `++` `#(` `#_`  
-`::` `...` `..` `!!` `//` `/*` `*/` `/>`  
+`>>=` `=<<` `<<=` `->>` `->` `=>` `<<-` `<-`
+`===` `==` `<=>` `>=` `<=` `>>` `<<` `!==` `!=` `<>`
+`:=` `++` `#(` `#_`
+`::` `...` `..` `!!` `//` `/*` `*/` `/>`

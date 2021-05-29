@@ -3,15 +3,15 @@ Ideas
 Site épuré mais en fait riche
 
 Exemples
-* http://regagnon.com/
-* http://tomhodgins.com/
-* http://hackjutsu.com/geek-profile/
+* https://regagnon.com/
+* https://tomhodgins.com/
+* https://hackjutsu.com/geek-profile/
 * Franck
 * Hugo
-* http://thejameskyle.com/
+* https://thejameskyle.com/
 * https://github.com/sindresorhus/sindresorhus.github.com
 * https://github.com/sindresorhus/hi
-* pro http://davidpetersimon.info/publications/
+* pro https://davidpetersimon.info/publications/
 
 
 https://orcid.org/register

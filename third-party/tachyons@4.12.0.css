@@ -1,4 +1,4 @@
-/*! TACHYONS v4.12.0 | http://tachyons.io */
+/*! TACHYONS v4.12.0 | https://tachyons.io */
 /*
  *
  *      ________            ______
@@ -11,7 +11,7 @@
  *    TABLE OF CONTENTS
  *
  *    1. External Library Includes
- *       - Normalize.css | http://normalize.css.github.io
+ *       - Normalize.css | https://normalize.css.github.io
  *    2. Tachyons Modules
  *    3. Variables
  *       - Media Queries
@@ -186,7 +186,7 @@ template { display: none; }
 [hidden] { display: none; }
 /* Modules */
 /*
- 
+
   BOX SIZING
 
 */
@@ -228,7 +228,7 @@ input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizi
 /*
 
    IMAGES
-   Docs: http://tachyons.io/docs/elements/images/
+   Docs: https://tachyons.io/docs/elements/images/
 
 */
 /* Responsive images! */
@@ -236,7 +236,7 @@ img { max-width: 100%; }
 /*
 
    BACKGROUND SIZE
-   Docs: http://tachyons.io/docs/themes/background-size/
+   Docs: https://tachyons.io/docs/themes/background-size/
 
    Media Query Extensions:
      -ns = not-small
@@ -291,7 +291,7 @@ img { max-width: 100%; }
 /*
 
     BORDERS
-    Docs: http://tachyons.io/docs/themes/borders/
+    Docs: https://tachyons.io/docs/themes/borders/
 
     Base:
       b = border
@@ -319,7 +319,7 @@ img { max-width: 100%; }
 /*
 
    BORDER COLORS
-   Docs: http://tachyons.io/docs/themes/borders/
+   Docs: https://tachyons.io/docs/themes/borders/
 
    Border colors can be used to extend the base
    border classes ba,bt,bb,br,bl found in the _borders.css file.
@@ -402,7 +402,7 @@ img { max-width: 100%; }
 /*
 
    BORDER RADIUS
-   Docs: http://tachyons.io/docs/themes/border-radius/
+   Docs: https://tachyons.io/docs/themes/border-radius/
 
    Base:
      br   = border-radius
@@ -441,7 +441,7 @@ img { max-width: 100%; }
 /*
 
    BORDER STYLES
-   Docs: http://tachyons.io/docs/themes/borders/
+   Docs: https://tachyons.io/docs/themes/borders/
 
    Depends on base border module in _borders.css
 
@@ -467,7 +467,7 @@ img { max-width: 100%; }
 /*
 
    BORDER WIDTHS
-   Docs: http://tachyons.io/docs/themes/borders/
+   Docs: https://tachyons.io/docs/themes/borders/
 
    Base:
      bw = border-width
@@ -500,7 +500,7 @@ img { max-width: 100%; }
 /*
 
   BOX-SHADOW
-  Docs: http://tachyons.io/docs/themes/box-shadow/
+  Docs: https://tachyons.io/docs/themes/box-shadow/
 
   Media Query Extensions:
    -ns = not-small
@@ -522,7 +522,7 @@ img { max-width: 100%; }
 /*
 
    COORDINATES
-   Docs: http://tachyons.io/docs/layout/position/
+   Docs: https://tachyons.io/docs/layout/position/
 
    Use in combination with the position module.
 
@@ -569,11 +569,11 @@ img { max-width: 100%; }
 /*
 
    CLEARFIX
-   http://tachyons.io/docs/layout/clearfix/
+   https://tachyons.io/docs/layout/clearfix/
 
 */
 /* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+   Ref: https://nicolasgallagher.com/micro-clearfix-hack/ */
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
 .cf { *zoom: 1; }
@@ -584,7 +584,7 @@ img { max-width: 100%; }
 /*
 
    DISPLAY
-   Docs: http://tachyons.io/docs/layout/display
+   Docs: https://tachyons.io/docs/layout/display
 
    Base:
     d = display
@@ -683,7 +683,7 @@ img { max-width: 100%; }
 /*
 
    FLOATS
-   http://tachyons.io/docs/layout/floats/
+   https://tachyons.io/docs/layout/floats/
 
    1. Floated elements are automatically rendered as block level elements.
       Setting floats to display inline will fix the double margin bug in
@@ -711,7 +711,7 @@ img { max-width: 100%; }
 /*
 
    FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
+   Docs: https://tachyons.io/docs/typography/font-family/
 
 */
 .sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
@@ -719,7 +719,7 @@ img { max-width: 100%; }
 .system-sans-serif { font-family: sans-serif; }
 .system-serif { font-family: serif; }
 /* Monospaced Typefaces (for code) */
-/* From http://cssfontstack.com */
+/* From https://cssfontstack.com */
 code, .code { font-family: Consolas, monaco, monospace; }
 .courier { font-family: 'Courier Next', courier, monospace; }
 /* Sans-Serif Typefaces */
@@ -736,7 +736,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FONT STYLE
-   Docs: http://tachyons.io/docs/typography/font-style/
+   Docs: https://tachyons.io/docs/typography/font-style/
 
    Media Query Extensions:
      -ns = not-small
@@ -749,7 +749,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FONT WEIGHT
-   Docs: http://tachyons.io/docs/typography/font-weight/
+   Docs: https://tachyons.io/docs/typography/font-weight/
 
    Base
      fw = font-weight
@@ -785,14 +785,14 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    FORMS
-   
+
 */
 .input-reset { -webkit-appearance: none; -moz-appearance: none; }
 .button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner { border: 0; padding: 0; }
 /*
 
    HEIGHTS
-   Docs: http://tachyons.io/docs/layout/heights/
+   Docs: https://tachyons.io/docs/layout/heights/
 
    Base:
      h = height
@@ -845,7 +845,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LETTER SPACING
-   Docs: http://tachyons.io/docs/typography/tracking/
+   Docs: https://tachyons.io/docs/typography/tracking/
 
    Media Query Extensions:
      -ns = not-small
@@ -859,7 +859,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LINE HEIGHT / LEADING
-   Docs: http://tachyons.io/docs/typography/line-height
+   Docs: https://tachyons.io/docs/typography/line-height
 
    Media Query Extensions:
      -ns = not-small
@@ -873,7 +873,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LINKS
-   Docs: http://tachyons.io/docs/elements/links/
+   Docs: https://tachyons.io/docs/elements/links/
 
 */
 .link { text-decoration: none; transition: color .15s ease-in; }
@@ -884,14 +884,14 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    LISTS
-   http://tachyons.io/docs/elements/lists/
+   https://tachyons.io/docs/elements/lists/
 
 */
 .list { list-style-type: none; }
 /*
 
    MAX WIDTHS
-   Docs: http://tachyons.io/docs/layout/max-widths/
+   Docs: https://tachyons.io/docs/layout/max-widths/
 
    Base:
      mw = max-width
@@ -935,7 +935,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    WIDTHS
-   Docs: http://tachyons.io/docs/layout/widths/
+   Docs: https://tachyons.io/docs/layout/widths/
 
    Base:
      w = width
@@ -1021,7 +1021,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    POSITIONING
-   Docs: http://tachyons.io/docs/layout/position/
+   Docs: https://tachyons.io/docs/layout/position/
 
    Media Query Extensions:
      -ns = not-small
@@ -1036,7 +1036,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
     OPACITY
-    Docs: http://tachyons.io/docs/themes/opacity/
+    Docs: https://tachyons.io/docs/themes/opacity/
 
 */
 .o-100 { opacity: 1; }
@@ -1067,11 +1067,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    SKINS
-   Docs: http://tachyons.io/docs/themes/skins/
+   Docs: https://tachyons.io/docs/themes/skins/
 
    Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will 
-   be set to the current text color. 
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
 
 */
 /* Text colors */
@@ -1189,13 +1189,13 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-washed-yellow { background-color: #fffceb; }
 .bg-washed-red { background-color: #ffdfdf; }
 .bg-inherit { background-color: inherit; }
-/* 
-  
+/*
+
    SKINS:PSEUDO
 
    Customize the color of an element when
    it is focused or hovered over.
- 
+
  */
 .hover-black:hover { color: #000; }
 .hover-black:focus { color: #000; }
@@ -1420,7 +1420,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /* Variables */
 /*
    SPACING
-   Docs: http://tachyons.io/docs/layout/spacing/
+   Docs: https://tachyons.io/docs/layout/spacing/
 
    An eight step powers of two scale ranging from 0 to 16rem.
 
@@ -1629,7 +1629,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   TABLES
-  Docs: http://tachyons.io/docs/elements/tables/
+  Docs: https://tachyons.io/docs/elements/tables/
 
 */
 .collapse { border-collapse: collapse; border-spacing: 0; }
@@ -1642,7 +1642,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TEXT DECORATION
-   Docs: http://tachyons.io/docs/typography/text-decoration/
+   Docs: https://tachyons.io/docs/typography/text-decoration/
 
 
    Media Query Extensions:
@@ -1657,7 +1657,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   TEXT ALIGN
-  Docs: http://tachyons.io/docs/typography/text-align/
+  Docs: https://tachyons.io/docs/typography/text-align/
 
   Base
     t = text-align
@@ -1681,7 +1681,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TEXT TRANSFORM
-   Docs: http://tachyons.io/docs/typography/text-transform/
+   Docs: https://tachyons.io/docs/typography/text-transform/
 
    Base:
      tt = text-transform
@@ -1705,7 +1705,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TYPE SCALE
-   Docs: http://tachyons.io/docs/typography/scale/
+   Docs: https://tachyons.io/docs/typography/scale/
 
    Base:
     f = font-size
@@ -1744,7 +1744,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    TYPOGRAPHY
-   http://tachyons.io/docs/typography/measure/
+   https://tachyons.io/docs/typography/measure/
 
    Media Query Extensions:
      -ns = not-small
@@ -1790,7 +1790,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 */
 /*
     Text that is hidden but accessible
-    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    Ref: https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 .clip { position: fixed !important; _position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
 /*
@@ -1823,7 +1823,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   HOVER EFFECTS
-  Docs: http://tachyons.io/docs/themes/hovers/
+  Docs: https://tachyons.io/docs/themes/hovers/
 
     - Dim
     - Glow
@@ -1876,16 +1876,16 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
 .pointer:hover { cursor: pointer; }
-/* 
+/*
    Add shadow on hover.
 
-   Performant box-shadow animation pattern from 
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
+   Performant box-shadow animation pattern from
+   https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 */
 .shadow-hover { cursor: pointer; position: relative; transition: all .5s cubic-bezier( .165, .84, .44, 1 ); }
 .shadow-hover::after { content: ''; box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); border-radius: inherit; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); }
 .shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
-/* Combine with classes in skins and skins-pseudo for 
+/* Combine with classes in skins and skins-pseudo for
  * many different transition possibilities. */
 .bg-animate, .bg-animate:hover, .bg-animate:focus { transition: background-color .15s ease-in-out; }
 /*
@@ -1912,7 +1912,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
     -unset = string value unset
 
   MDN: https://developer.mozilla.org/en/docs/Web/CSS/z-index
-  Spec: http://www.w3.org/TR/CSS2/zindex.html
+  Spec: https://www.w3.org/TR/CSS2/zindex.html
   Articles:
     https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
 
@@ -2009,7 +2009,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
   DEBUG CHILDREN
-  Docs: http://tachyons.io/docs/debug/
+  Docs: https://tachyons.io/docs/debug/
 
   Just add the debug class to any element to see outlines on its
   children.
@@ -2021,7 +2021,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 /*
 
    DEBUG GRID
-   http://tachyons.io/docs/debug-grid/
+   https://tachyons.io/docs/debug-grid/
 
    Can be useful for debugging layout issues
    or helping to make sure things line up perfectly.
