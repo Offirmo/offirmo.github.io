@@ -12,6 +12,29 @@
 	})(window,document,'script','dataLayer','GTM-53FX79V');</script>
 	<!-- End Google Tag Manager -->
 
+
+	<script>
+		window.dataLayer = window.dataLayer || []
+		dataLayer.push({
+			foo: {
+				bar: 42,
+			}
+		})
+	</script>
+
+	<script>
+		// send events
+		dataLayer.push({
+			event: 'event_name__DL',
+			eventCategory: 'DLcategory',
+			eventAction: 'DLaction',
+			eventLabel: 'DLlabel',
+		})
+		console.log('SETUP??', { ga, gtag })
+		//gtag('event', 'event_name__gtag', { param1: 'gtagParam1' })
+	</script>
+
+
 	<style>
 		a.btn {
 			display: block;
@@ -30,7 +53,7 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <h1>Hello World gtm.js w/ UA + GA4</h1>
-19:36<br/>
+20:03<br/>
 <a href="https://support.google.com/analytics/answer/9310895">https://support.google.com/analytics/answer/9310895</a>
 
 <ul>
