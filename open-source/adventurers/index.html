@@ -44,6 +44,12 @@
 			padding: 10px;
 		}
 	</style>
+	<script>
+		// https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tag
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', 'UA-70800748-3', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
 <body class="o⋄top-container" data-o-theme="dark--default">
@@ -108,6 +114,8 @@ See also:
 		el.href || (el.href = el.text)
 	})
 </script>
+
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <!-- https://perfops.net/rum -->
 <script async src="https://cdn.jsdelivr.net/npm/perfops-rom"></script>
