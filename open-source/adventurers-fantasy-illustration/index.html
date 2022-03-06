@@ -39,6 +39,55 @@
 	<!-- OT⋄CUSTOM BEGIN favicons -->
 	<!-- OT⋄CUSTOM END favicons -->
 
+	<script>
+		// ensure trailing slash if necessary
+		// (optional) clean index.html
+		;(function _ensure_canonical_url(should_keep_index_html = false) {
+			const path_segment_after_last_slash = location.pathname.split('/').slice(-1)[0] || ''
+
+			if (!path_segment_after_last_slash) {
+				// we have a trailing slash, all good
+				return
+			}
+
+			// current path doesn't end with a trailing slash
+			// this may be ok, ex. /xyz.html = this file
+			// OR that may be an issue if we are located by our parent folder (implicit file) ex. /app
+			// https://searchfacts.com/url-trailing-slash/
+			// https://ahrefs.com/blog/trailing-slash/
+			const is_last_segment_a_html_file = path_segment_after_last_slash.endsWith('.html') || path_segment_after_last_slash.endsWith('.htm')
+
+			let new_path = location.pathname // no change for now
+
+			if (is_last_segment_a_html_file) {
+				if (path_segment_after_last_slash !== 'index.html') {
+					// all good, needed ✔
+					return
+				}
+
+				// index.html often doesn't bring anything
+				if (should_keep_index_html) {
+					// all good ✔
+					return
+				}
+
+				// remove useless index.html
+				new_path = location.pathname.split('/').slice(0, -1).join('/') + '/'
+			}
+			else {
+				// We are located by a folder without a trailing slash.
+				// We are opinionated towards a trailing slash to ease relative references.
+				// And Netlify has troubles when no trailing slash.
+				// Redirect to the version with slash:
+				// https://love2dev.com/blog/ways-to-use-javascript-redirect-to-another-page/
+				// let's be careful to not lose any part of the URL!
+				new_path = location.pathname + '/'
+			}
+
+			const new_url = location.origin + new_path + location.search + location.hash
+			location.replace(new_url)
+		})()
+	</script>
 	<style>
 		/* OT⋄CUSTOM BEGIN early styles */
 		/* OT⋄CUSTOM END early styles */
@@ -123,7 +172,6 @@
 		     style="display: block; width: 90vw; position: relative; left: calc(-45vw + 50%);">
 	</a>
 </p>
-
 <p>
 	Credits to <a href="https://www.peppercarrot.com/en/about/index.html">David Revoy</a> for the inspiration of releasing to Open Source!</a>
 </p>
@@ -131,6 +179,7 @@
 <footer>
 	<small>Last updated: 2022/03.</small>
 </footer>
+</div>
 <!-- OT⋄CUSTOM END body -->
 
 <script type="module">
@@ -144,3 +193,4 @@
 
 <!-- https://perfops.net/rum -->
 <script async src="https://cdn.perfops.net/rom3/rom3.min.js"></script>
+</body>
