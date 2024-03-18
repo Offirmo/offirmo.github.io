@@ -15,3 +15,6 @@ Pure Vanilla because I wanted to try it ;)
 - Advices
   - https://vanschneider.com/a-love-letter-to-personal-websites
   - https://vanschneider.com/the-most-important-page-on-your-portfolio
+
+
+TODO upgrade https://9elements.com/blog/create-diagonal-layouts-like-it-s-2020/
