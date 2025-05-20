@@ -10,7 +10,7 @@
 	<meta name="google-site-verification" content="O2l06W0gN92s7grxWHUb4oofTYaOsgqUcjylYhF7Z78" />
 
 	<link rel="stylesheet" href="./third-party/tachyons@4.12.0.min.css">
-	<style type="text/css">
+	<style>
 		/*@import './node_modules/tachyons-debug/css/tachyons-debug.css';*/
 
 		@font-face{
@@ -22,6 +22,9 @@
 			url('./third-party/FiraCode-4fe92794ac0a1e01e0b94cc82436efd2ec5bb00f/distr/ttf/FiraCode-Light.ttf') format('truetype');
 			font-weight: 300;
 			font-style: normal;
+		}
+		:root {
+			--o⋄content-recommended-width: 60ch;
 		}
 		body {
 			--angled-sep-skew: 1.7deg;
@@ -82,6 +85,8 @@
 
 		.angled-content {
 			z-index: 10;
+			max-width: var(--o⋄content-recommended-width);
+			margin: 0 max(1ch, (100vw - var(--o⋄content-recommended-width))/2); /* intelligent centering with a minimum margin for small screens */
 		}
 		@media screen and (min-width: 30em) {
 			body { --angled-sep-skew: 1.2deg; }
@@ -276,14 +281,14 @@
 
 	<ul id="more-about-me" class="list pl0 bt b--black-10">
 
-		<li class="pa3 pa4-ns pv3 tc">
+		<li class="pv3 tc">
 			<b class="db f3 mb1">
 				Let’s team up !
 			</b>
 			<br />
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-05">
+		<li class="pv4 relative light-color-05">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 adjust--left blinking">
@@ -302,7 +307,7 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-07 navy">
+		<li class="pv4 pt3 relative light-color-07 navy">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 adjust--left">
@@ -319,7 +324,7 @@
 			</div>
 		</li>
 
-		<li id="aboutme-devops" class="pa3 pa4-ns pv4 relative bg-ubuntu-console fg-ubuntu-console-white">
+		<li id="aboutme-devops" class="pv4 relative bg-ubuntu-console fg-ubuntu-console-white">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -333,7 +338,7 @@
 			</div>
 		</li>
 
-		<li id="aboutme-security" class="pa3 pa4-ns pv4 pt3 relative light-color-12">
+		<li id="aboutme-security" class="pv4 pt3 relative light-color-12">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -350,22 +355,22 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-09 navy">
+		<li class="pv4 relative light-color-09 navy">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
 					Scale
 				</h1>
 				<span class="f6-ns f5-l db lh-copy measure">
-					<p>My code is currently used by 2.8M enterprise customers (monthly).</p>
-					<p>I deliver mindful of performance, reliability, security, observability, legal constraints.</p>
+					<p>My code is currently used by 10M+ enterprise customers (monthly).</p>
+					<p>I deliver mindful of security, reliability, observability, compliance, performance.</p>
 				</span>
 				<br />
 				<br />
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 relative light-color-11">
+		<li class="pv4 relative light-color-11">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -376,7 +381,7 @@
 						TypeScript is my versatile technology of choice:<br />
 						- 💻 frontend (Progressive Web Apps)<br />
 						- 🗄 backend (serverless, Node.js)<br />
-						- 📦 <a href="https://www.offirmo.net/offirmo-monorepo/0-doc/modules-directory/index.html" target="_blank">npm modules</a> (isomorphic, dedicated)<br />
+						- 📦 <a href="https://www.npmjs.com/~offirmo" target="_blank">npm modules</a> (isomorphic, dedicated)<br />
 						- 💾 CLI tools (Node.js)<br />
 						- 🧩 <a href="https://universal-debug-api-js.netlify.app/" target="_blank">Browser extensions</a> (WebExtensions)<br />
 						- 📱 WebView mobile apps (Cordova/PhoneGap)<br />
@@ -390,7 +395,7 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative co212">
+		<li class="pv4 pt3 relative co212">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -415,7 +420,8 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative light-color-08">
+		<!--
+		<li class="pv4 pt3 relative light-color-08">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -473,8 +479,9 @@
 				<br />
 			</div>
 		</li>
+		-->
 
-		<li class="pa3 pa4-ns pv4 relative bg-reflex-blue fg-yellow">
+		<li class="pv4 relative bg-reflex-blue fg-yellow">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1">
@@ -492,7 +499,7 @@
 			</div>
 		</li>
 
-		<li class="pa3 pa4-ns pv4 pt3 relative bg-near-white">
+		<li class="pv4 pt3 relative bg-near-white">
 			<span class="angled-sep"></span>
 			<div class="angled-content">
 				<h1 class="db f4-ns f3-l mb1 tc">
@@ -506,7 +513,7 @@
 	</ul>
 
 	<footer class="pv2 ph3 ph5-m ph6-l mid-gray">
-		<small class="f6 db tc">©2016-2020 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
+		<small class="f6 db tc">©2016-2025 <b class="ttu">Offirmo</b>, All Rights Reserved</small>
 		<div class="tc mt1">
 			<a href="./privacy-policy.txt" class="f6 dib ph2 link mid-gray dim">Privacy Policy</a>
 			<!-- <a href="#"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a> -->
